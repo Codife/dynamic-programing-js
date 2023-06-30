@@ -10,6 +10,7 @@ const gridTraveler = (m, n) => {
 };
 
 //with memoization
+// time complexity O(m * n)
 const gridTravelerM = (m, n, memo = {}) => {
   const key = m + "," + n;
   if (key in memo) return memo[key];
